@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Mangal Caterers</title>
+    <meta name="description" content="Premium wedding catering and mandap decoration services in Chhatrapati Sambhajinagar. Maharashtrian food, luxury decor & complete wedding planning. Book now!">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --maroon: #6A1B1B;
+            --gold: #D4AF37;
+            --ivory: #FFF8E7;
+            --peach: #FADADD;
+            --white: #FFFFFF;
+            --dark: #2C2C2C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 3rem;
+            border: 3px solid #d4af37;
+            border-radius: 15px
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--maroon), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: 5rem;
+            gap: 2.3rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 17px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Hero Section */
+        
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(106, 27, 27, 0.7), rgba(106, 27, 27, 0.7)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f8e7d7" width="1200" height="800"/><path fill="%23fadadd" d="M0 400Q300 200 600 400T1200 400V800H0z"/><circle fill="%23d4af37" opacity="0.1" cx="200" cy="300" r="150"/><circle fill="%236a1b1b" opacity="0.05" cx="1000" cy="500" r="200"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            padding-top: 5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            padding-top: 2rem;
+            margin-bottom: 1rem;
+            max-width: 500px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+
+        .cta-buttons {
+            padding-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--maroon);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--maroon);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--ivory);
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            
+        }
+
+        .service-card:hover {
+           
+            transform: translateY(-12px) scale(1.06);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            border-color: #7b1e1e;
+            
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--maroon), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 2.5rem;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            color: var(--maroon);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            height: 250px;
+            background: linear-gradient(45deg, var(--peach), var(--ivory));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--maroon);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(212, 175, 55, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: var(--ivory);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--maroon);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            background: var(--gold);
+            color: var(--maroon);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background: var(--ivory);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 10px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--maroon);
+            color: var(--ivory);
+            text-align: center;
+            padding: 3rem 0 1rem;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: var(--maroon);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .whatsapp-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+
+<a href="tel:+919876543210" style="
+position:fixed;
+bottom:20px;
+left:20px;
+background:var(--gold);
+color:var(--maroon);
+padding:12px 18px;
+border-radius:50px;
+font-weight:600;
+z-index:1000;
+text-decoration:none;">
+📞 Call Now
+</a>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">SM</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Making Your Special Moments<br>Truly Grand & Memorable</h1>
+            <center><p>From elegant mandap decoration to unforgettable wedding feasts, we create celebrations that stay in hearts forever.</p></center>
+            <div class="cta-buttons">
+                <a href="#services" class="btn-secondary">Explore Services</a>
+                <a href="#contact" class="btn-primary">Book Consultation</a>
+                <a href="#gallery" class="btn-secondary">View Our Work</a>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background: var(--maroon); color:white; padding:15px 0;">
+    <div class="container" style="display:flex; justify-content:space-around; text-align:center; flex-wrap:wrap;">
+        <div>⭐ 500+ Happy Weddings</div>
+        <div>🍽 Premium Catering Experts</div>
+        <div>🌸 Custom Decoration Themes</div>
+        <div>📍 Serving Chhatrapati Sambhajinagar</div>
+    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <br>
+        <br>
+        <h2 class="section-title">Our Premium Services</h2>
+        <div style="text-align: center; ">
+            <p style="font-size: 1.2rem; color: var(--maroon); font-style: italic;">
+                Complete Wedding Solutions Under One Roof!
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Wedding Catering</h3>
+                <p>Authentic Maharashtrian & multi-cuisine wedding feasts with premium presentation.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-archway"></i>
+                </div>
+                <h3>Mandap Decoration</h3>
+                <p>Elegant mandap designs blending tradition with modern luxury.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Event Planning</h3>
+                <p>Complete wedding & event management from concept to execution.</p>
+            </div>
+           
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="font-size: 1.2rem; color: var(--maroon); font-style: italic;">
+                We blend tradition with elegance to create unforgettable celebrations.
+            </p>
+        </div>
+    </section>
+
+    <section style="background: var(--ivory);">
+    <div class="container">
+        <h2 class="section-title">Premium Wedding Catering</h2>
+
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <h3>Maharashtrian Traditional Meals</h3>
+                <p>Authentic स्वाद with traditional wedding serving experience.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <h3>Multi-Cuisine Menu</h3>
+                <p>North Indian, South Indian & customized menus for all guests.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <h3>Premium Presentation</h3>
+                <p>Elegant buffet setup with royal serving style.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <h3>Live Counters</h3>
+                <p>Chaat, dosa, sweets & interactive food experiences.</p>
+            </div>
+
+            <!-- New Box 5 -->
+            <div class="service-card fade-in">
+                <h3>Wedding Dessert Station</h3>
+                <p>Delicious sweets, ice creams & traditional desserts for celebrations.</p>
+            </div>
+
+            <!-- New Box 6 -->
+            <div class="service-card fade-in">
+                <h3>Professional Catering Staff</h3>
+                <p>Experienced chefs & serving staff ensuring smooth guest hospitality.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="#contact" class="btn-primary">Get Catering Quote</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section style="background: var(--peach);">
+        <div class="container">
+            <h2 class="section-title">Why Families Trust Us</h2>
+            <div class="features-grid">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div>
+                        <h3>10+ Years Experience</h3>
+                        <p>Trusted by thousands of families across Chhatrapati Sambhajinagar.</p>
+                    </div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div>
+                        <h3>Authentic Taste</h3>
+                        <p>Traditional recipes with premium ingredients and presentation.</p>
+                    </div>
+                </div>
+
+                <!-- New Feature Item -->
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h3>Mandap & Catering Expertise</h3>
+                        <p>Beautiful wedding mandap setups with complete catering solutions for memorable celebrations.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div>
+                        <h3>Custom Packages</h3>
+                        <p>Tailored solutions for every budget and celebration size.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>Professional Team</h3>
+                        <p>Expert chefs, decorators & event managers at your service.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>On-Time Execution</h3>
+                        <p>Every event delivered perfectly, on schedule, every time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container">
+        <br>
+        <br>
+    
+        <h2 class="section-title">A Glimpse of Our Royal Wedding Creations</h2>
+        <p style="text-align:center; margin-bottom:1rem;">
+        Trusted by families across Chhatrapati Sambhajinagar
+        </p>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in">
+                <i class="fas fa-image" style="font-size: 3rem;"></i>
+                Mandap Decor
+            </div>
+            <div class="gallery-item fade-in">
+                <i class="fas fa-utensils" style="font-size: 3rem;"></i>
+                Food Presentation
+            </div>
+            <div class="gallery-item fade-in">
+                <i class="fas fa-archway" style="font-size: 3rem;"></i>
+                Wedding Setup
+            </div>
+            <div class="gallery-item fade-in">
+                <i class="fas fa-star" style="font-size: 3rem;"></i>
+                Buffet Display
+            </div>
+            <div class="gallery-item fade-in">
+                <i class="fas fa-users" style="font-size: 3rem;"></i>
+                Live Events
+            </div>
+            <div class="gallery-item fade-in">
+                <i class="fas fa-heart" style="font-size: 3rem;"></i>
+                Client Moments
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="#" class="btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" style="background: var(--ivory);">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="testimonial fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The food and decoration were absolutely amazing. Everything was perfect! Our wedding was truly memorable thanks to Shubham Mangal Caterers."</p>
+                    <h4>– Priya & Rahul</h4>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best caterers in Sambhajinagar! The mandap decoration was breathtaking and food was delicious. Highly recommended!"</p>
+                    <h4>– Amit & Sneha</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <br>
+        <br>
+        <h2 class="section-title">Book Your Event Today</h2>
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <h3>Let's Create Magic Together</h3>
+                <p>Ready to make your celebration unforgettable?<br>
+                     Contact us for a free consultation.</p>
+
+                <br>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>+91 98765 43210</h4>
+                        <p>Call Anytime</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Chhatrapati Sambhajinagar</h4>
+                        <p>Maharashtra, India</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>info@shubhammangalcaterers.com</h4>
+                        <p>24 Hours Response</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Tell us about your event..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Shubham Mangal Caterers</h3>
+                    <p>Making Weddings Grand, Memorable & Delicious</p>
+                    <p>Best wedding caterers in Chhatrapati Sambhajinagar</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#home" style="color: var(--ivory);">Home</a></li>
+                        <li><a href="#services" style="color: var(--ivory);">Services</a></li>
+                        <li><a href="#gallery" style="color: var(--ivory);">Gallery</a></li>
+                        <li><a href="#contact" style="color: var(--ivory);">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#" style="color: var(--ivory);">Wedding Catering</a></li>
+                        <li><a href="#" style="color: var(--ivory);">Mandap Decoration</a></li>
+                        <li><a href="#" style="color: var(--ivory);">Event Planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.8;">© 2026 Shubham Mangal Caterers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = Math.random() * 0.3 + 's';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.remove('fade-in');
+        observer.observe(el);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! We will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // WhatsApp button mobile positioning
+        if (window.innerWidth <= 768) {
+            document.querySelector('.whatsapp-btn').style.position = 'fixed';
+        }
+    </script>
+</body>
+</html>
