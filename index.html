@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Mangal Caterers | Premium Wedding Catering & Mandap Decor</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Elevate your wedding with Shubham Mangal Caterers in Chhatrapati Sambhajinagar. Authentic Maharashtrian feasts, luxury mandap decor, and seamless event planning.">
+    <meta name="keywords"
+        content="wedding catering, mandap decoration, wedding planner, Chhatrapati Sambhajinagar, Maharashtrian catering, wedding buffet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="progress-container">
+        <div class="progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="mainHeader">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Shubham Caterers & Events Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-anchor">Home</a></li>
+                <li><a href="#services" class="nav-anchor">Services</a></li>
+                <li><a href="#menu-explorer" class="nav-anchor">Menu</a></li>
+                <li><a href="#gallery" class="nav-anchor">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-anchor">Reviews</a></li>
+                <li><a href="#contact" class="nav-anchor">Contact</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="https://api.whatsapp.com/send?phone=919112799815" target="_blank" class="nav-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;"
+                    onclick="openModal('Header Consultation Request')">Book Consultation</button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Premium Live Video Background from Web -->
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="images/Luxury_mandap_reveal_shot_202606201354.mp4" type="video/mp4">
+        </video>
+
+        <!-- Luxury Floating Elements -->
+        <div class="gold-particles"></div>
+        <div class="bokeh-lights"></div>
+        <div class="floral-accent floral-accent-top-left"></div>
+        <div class="floral-accent floral-accent-bottom-right"></div>
+
+        <div class="mandala-bg mandala-bg-left"></div>
+        <div class="mandala-bg mandala-bg-right"></div>
+
+        <div class="container hero-container-layout">
+            <!-- Left Column: Hero Content -->
+            <div class="hero-content-left">
+                <div class="hero-badge reveal-element">
+                    <i class="fas fa-gem"></i> Luxury Wedding Hospitality
+                </div>
+                <h1 class="reveal-element delay-1">Crafting Royal Wedding<br><span>Experiences That Last Forever</span>
+                </h1>
+                <p class="reveal-element delay-2">From authentic royal feasts to bespoke wedding hospitality, we create
+                    unforgettable celebrations filled with warmth, elegance, and exceptional service.</p>
+                <div class="hero-cta reveal-element delay-3">
+                    <button onclick="openModal('Hero Consultation Request')" class="btn btn-primary">Book
+                        Consultation</button>
+                    <a href="#menu-explorer" class="btn btn-secondary">View Menu & Pricing</a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero-trust-indicators reveal-element delay-4">
+                    <div class="trust-indicator-item">
+                        <i class="fas fa-circle-check"></i>
+                        <span>Bespoke Menu Design</span>
+                    </div>
+                    <div class="trust-indicator-item">
+                        <i class="fas fa-circle-check"></i>
+                        <span>Royal Hospitality Staff</span>
+                    </div>
+                    <div class="trust-indicator-item">
+                        <i class="fas fa-circle-check"></i>
+                        <span>100% Pure & Hygienic</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Premium Centered Statistics Glassmorphic Cards -->
+            <div class="hero-content-right reveal-element delay-2">
+                <div class="hero-glass-cards-stack">
+                    <!-- Box 1: Happy Weddings & Location -->
+                    <div class="hero-glass-card card-first">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-value">RATED 4.9/5</div>
+                        <div class="stats-divider"></div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Weddings</div>
+                        <div class="stat-sublabel">📍 Serving Chhatrapati Sambhajinagar</div>
+                    </div>
+
+                    <!-- Box 2: Premium Catering -->
+                    <div class="hero-glass-card card-second">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-value">RATED 4.9/5</div>
+                        <div class="stats-divider"></div>
+                        <div class="stat-number">🍽️</div>
+                        <div class="stat-label">Premium Catering Experts</div>
+                        <div class="stat-sublabel">Traditional & Multi-Cuisine Feasts</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Trust Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-strip-grid">
+                <div class="trust-strip-item">
+                    <div class="trust-icon"><i class="fas fa-award"></i></div>
+                    <div>
+                        <h3>500+</h3>
+                        <p>Weddings Catered</p>
+                    </div>
+                </div>
+                <div class="trust-strip-item">
+                    <div class="trust-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h3>10+ Years</h3>
+                        <p>Experience</p>
+                    </div>
+                </div>
+                <div class="trust-strip-item">
+                    <div class="trust-icon"><i class="fas fa-users"></i></div>
+                    <div>
+                        <h3>50,000+</h3>
+                        <p>Happy Guests</p>
+                    </div>
+                </div>
+                <div class="trust-strip-item">
+                    <div class="trust-icon"><i class="fas fa-user-tie"></i></div>
+                    <div>
+                        <h3>Premium</h3>
+                        <p>Hospitality Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">What We Offer</span>
+                <h2>Our Premium Wedding Services</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-circle-notch"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card reveal-element delay-1">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Wedding Catering</h3>
+                    <p>Relish mouth-watering traditional Maharashtrian dishes and modern multi-cuisine options. We
+                        provide complete gourmet Veg & Non-Veg catering services, served with royal hospitality.</p>
+                    <a href="#menu-explorer" class="learn-more-link">Explore Menu Explorer <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card reveal-element delay-2">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-archway"></i>
+                    </div>
+                    <h3>Mandap & Decor</h3>
+                    <p>Breathtaking floral layouts, elegant stage setups, and royal mandaps customized perfectly to your
+                        wedding theme and dreams.</p>
+                    <a href="#calculator" class="learn-more-link">Estimate Decor Cost <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card reveal-element delay-3">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Event Planning</h3>
+                    <p>Complete execution from consulting and layouts to guest hospitality and coordinate check-in.
+                        Experience a completely stress-free celebration.</p>
+                    <button onclick="openModal('Full Event Management Planning')" class="btn btn-primary"
+                        style="padding: 0.5rem 1.2rem; font-size: 0.85rem; border-radius: 6px; margin-top: 1rem;">Inquire
+                        Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Explorer Section -->
+    <section id="menu-explorer" class="menu-explorer-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Culinary Journey</span>
+                <h2>Explore Our Royal Menu Cards</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-circle-notch"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="menu-tabs reveal-element">
+                <button class="menu-tab-btn active" onclick="switchMenuTab(event, 'traditional')">Traditional
+                    Feast</button>
+                <button class="menu-tab-btn" onclick="switchMenuTab(event, 'multicuisine')">Multi-Cuisine</button>
+                <button class="menu-tab-btn" onclick="switchMenuTab(event, 'desserts')">Desserts & Sweets</button>
+                <button class="menu-tab-btn" onclick="switchMenuTab(event, 'livecounters')">Live Food Corners</button>
+            </div>
+
+            <div class="menu-display-area reveal-element delay-1">
+                <!-- Tab 1: Traditional -->
+                <div id="traditional" class="menu-panel active">
+                    <div class="menu-panel-content">
+                        <h3>Maharashtrian Traditional Feast</h3>
+                        <p class="menu-intro">Classic wedding foods cooked using authentic spices, following traditional
+                            customs and serving style.</p>
+
+                        <div class="menu-items-list">
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Puran Poli with Sajuk Tup</h4>
+                                    <p>Soft wheat flatbread filled with sweet lentil filling, served with pure melted
+                                        ghee.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Amrakhand or Basundi</h4>
+                                    <p>Rich, creamy mango yogurt dessert or thick sweetened milk reduction flavored with
+                                        cardamom.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Masale Bhat & Katachi Amti</h4>
+                                    <p>Fragrant spiced rice topped with cashews, paired with a savory, spicy chana dal
+                                        curry.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Koshimbir, Aluwadi & Kurdai</h4>
+                                    <p>Crunchy cucumber-peanut salad, pinwheel taro leaf rolls, and crisp sun-dried
+                                        wheat fritters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel-visual" style="--menu-bg: url('images/menu_traditional_bg.jpg');">
+                        <div class="visual-decor-icon"><i class="fas fa-bowl-food"></i></div>
+                        <h4>The Royal Shahi Pangat</h4>
+                        <p>Our traditional catering serves guests in visual symmetry with clean copper plates and warm
+                            hospitality.</p>
+                        <div class="badge-list">
+                            <span class="menu-badge">100% Pure Ghee</span>
+                            <span class="menu-badge">Authentic taste</span>
+                            <span class="menu-badge">Traditional servers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Multi-Cuisine -->
+                <div id="multicuisine" class="menu-panel">
+                    <div class="menu-panel-content">
+                        <h3>Modern Multi-Cuisine Buffet</h3>
+                        <p class="menu-intro">A selection of popular recipes from across North and South India, suited
+                            to diverse guest preferences.</p>
+
+                        <div class="menu-items-list">
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Paneer Pasanda & Veg Jalfrezi</h4>
+                                    <p>Rich paneer triangles in smooth almond gravy, served alongside crunchy vegetables
+                                        in tomato sauce.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Dal Makhani (Aromatically Slow Cooked)</h4>
+                                    <p>Black lentils simmered overnight with heavy butter and fresh cream for a rich
+                                        texture.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Assorted Butter Naans & Kulchas</h4>
+                                    <p>Hot, clay-oven flatbreads served straight to guest plates from the live tandoor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Shahi Dum Biryani</h4>
+                                    <p>Fragrant long-grain basmati layered with seasonal vegetables, herbs, and saffron
+                                        milk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel-visual" style="--menu-bg: url('images/menu_multicuisine_bg.jpg');">
+                        <div class="visual-decor-icon"><i class="fas fa-fire-burner"></i></div>
+                        <h4>Gourmet Buffet Display</h4>
+                        <p>Stylish food counters with brass warmers and attractive floral displays that elevate your
+                            event venue.</p>
+                        <div class="badge-list">
+                            <span class="menu-badge">Live Tandoor</span>
+                            <span class="menu-badge">Custom Spicing</span>
+                            <span class="menu-badge">Fine Ingredients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Desserts -->
+                <div id="desserts" class="menu-panel">
+                    <div class="menu-panel-content">
+                        <h3>Dessert & Sweet Stations</h3>
+                        <p class="menu-intro">Sweet treats to complete your celebration feast, combining traditional
+                            delights and modern desserts.</p>
+
+                        <div class="menu-items-list">
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Angoori Gulab Jamun with Ice Cream</h4>
+                                    <p>Warm baby dumplings in sugar syrup, paired with premium cold vanilla bean ice
+                                        cream.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Kesari Jalebi (Live Counter)</h4>
+                                    <p>Crispy, coiled flour sweets dipped in warm saffron sugar syrup, cooked fresh at
+                                        the counter.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Kaju Katli & Moong Dal Halwa</h4>
+                                    <p>Elegant cashew fudge silver leaves along with hot, rich split green-gram pudding.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel-visual" style="--menu-bg: url('images/menu_desserts_bg.jpg');">
+                        <div class="visual-decor-icon"><i class="fas fa-ice-cream"></i></div>
+                        <h4>Sweet Memories</h4>
+                        <p>A beautifully decorated dessert island featuring custom ice cream setups and decorative dry
+                            fruit platters.</p>
+                        <div class="badge-list">
+                            <span class="menu-badge">Live Sweet Chefs</span>
+                            <span class="menu-badge">Low Sugar Options</span>
+                            <span class="menu-badge">Premium Nuts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Live Counters -->
+                <div id="livecounters" class="menu-panel">
+                    <div class="menu-panel-content">
+                        <h3>Interactive Live Food Stations</h3>
+                        <p class="menu-intro">Add fun to your event with fast, fresh, and customizable food cooked live
+                            in front of your guests.</p>
+
+                        <div class="menu-items-list">
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Shahi Raj Kachori & Dahi Bhalla</h4>
+                                    <p>Crisp flour shells filled with chickpeas, potatoes, tangy chutneys, and sweet
+                                        spiced yogurt.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Mumbai Pav Bhaji Station</h4>
+                                    <p>Spicy mashed vegetable gravy served with soft, buttery toasted bread rolls cooked
+                                        on giant griddles.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-row">
+                                <i class="fas fa-circle"></i>
+                                <div>
+                                    <h4>Italian Pasta & Pizza Bar</h4>
+                                    <p>Penne and fusilli tossed in Alfredo or Arrabbiata sauces with custom vegetable
+                                        toppings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel-visual" style="--menu-bg: url('images/menu_livecounters_bg.jpg');">
+                        <div class="visual-decor-icon"><i class="fas fa-utensils"></i></div>
+                        <h4>Sizzling Live Experience</h4>
+                        <p>Professional chefs preparing fresh customized bites dynamically, keeping your guests fully
+                            entertained.</p>
+                        <div class="badge-list">
+                            <span class="menu-badge">Fresh Preparation</span>
+                            <span class="menu-badge">Kids Favorites</span>
+                            <span class="menu-badge">Hygienic setup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Estimator Widget Section -->
+    <section id="calculator" class="calculator-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Budget Estimator</span>
+                <h2>Interactive Quote Calculator</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-calculator"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="calculator-container reveal-element delay-1">
+                <!-- Left form panel -->
+                <div class="calc-form-panel">
+                    <h3>Configure Your Celebration</h3>
+                    <div class="calc-grid">
+
+                        <!-- Guest count slider -->
+                        <div class="calc-group">
+                            <div class="calc-label">
+                                <span>Expected Guests</span>
+                                <span class="value-bubble" id="guestBubble">250 Guests</span>
+                            </div>
+                            <div class="slider-wrapper">
+                                <input type="range" id="guestCount" min="100" max="1500" step="50" value="250"
+                                    oninput="calculateEstimate()">
+                            </div>
+                        </div>
+
+                        <!-- Catering menu type -->
+                        <div class="calc-group">
+                            <label class="calc-label" for="cateringMenu">Catering Feast Style</label>
+                            <div class="select-wrapper">
+                                <select id="cateringMenu" class="calc-select" onchange="calculateEstimate()">
+                                    <option value="0">No Catering Service (Only Decor)</option>
+                                    <option value="450" selected>Royal Traditional Feast (Pure Veg - ₹450/plate)
+                                    </option>
+                                    <option value="650">Premium Indo-Chinese & Multi-Cuisine Buffet (Veg/Non-Veg -
+                                        ₹650/plate)</option>
+                                    <option value="900">Imperial Grand Royal Feast (Premium Veg & Non-Veg - ₹900/plate)
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Decor theme packages -->
+                        <div class="calc-group">
+                            <label class="calc-label" for="decorPackage">Mandap Decor & Setup Tier</label>
+                            <div class="select-wrapper">
+                                <select id="decorPackage" class="calc-select" onchange="calculateEstimate()">
+                                    <option value="0">No Decor Service (Only Catering)</option>
+                                    <option value="60000" selected>Classic Traditional Stage & Mandap (₹60,000)</option>
+                                    <option value="120000">Exotic Royal Floral Palace Decor (₹1,20,000)</option>
+                                    <option value="250000">Elite Destination Palace Theme Setup (₹2,50,000)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Service add ons -->
+                        <div class="calc-group">
+                            <span class="calc-label">Event Add-on Enhancements</span>
+                            <div class="checkbox-options">
+                                <div class="checkbox-card" id="addonCard1"
+                                    onclick="toggleAddon('addon1', 'addonCard1')">
+                                    <input type="checkbox" id="addon1" value="80" onchange="calculateEstimate()"
+                                        onclick="event.stopPropagation()">
+                                    <label for="addon1">Live Food Counters (+₹80/plate)</label>
+                                </div>
+                                <div class="checkbox-card" id="addonCard2"
+                                    onclick="toggleAddon('addon2', 'addonCard2')">
+                                    <input type="checkbox" id="addon2" value="40" onchange="calculateEstimate()"
+                                        onclick="event.stopPropagation()">
+                                    <label for="addon2">Special Dessert bar (+₹40/plate)</label>
+                                </div>
+                                <div class="checkbox-card" id="addonCard3"
+                                    onclick="toggleAddon('addon3', 'addonCard3')">
+                                    <input type="checkbox" id="addon3" value="25000" onchange="calculateEstimate()"
+                                        onclick="event.stopPropagation()">
+                                    <label for="addon3">Dedicated Coordinator (₹25,000 flat)</label>
+                                </div>
+                                <div class="checkbox-card" id="addonCard4"
+                                    onclick="toggleAddon('addon4', 'addonCard4')">
+                                    <input type="checkbox" id="addon4" value="15000" onchange="calculateEstimate()"
+                                        onclick="event.stopPropagation()">
+                                    <label for="addon4">Royal Welcome Entry Setup (₹15,000)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right result panel -->
+                <div class="calc-results-panel">
+                    <h4>Estimated Budget</h4>
+
+                    <div class="estimate-range-box">
+                        <span>Total Price Estimate</span>
+                        <div class="price-display" id="totalPriceDisplay">₹1,95,000 - ₹2,10,000</div>
+                    </div>
+
+                    <div class="calc-breakdown">
+                        <div class="breakdown-row">
+                            <span>Guest Volume:</span>
+                            <strong id="breakdownGuests">250</strong>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Catering Services:</span>
+                            <strong id="breakdownCatering">₹1,12,500</strong>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Mandap Decor Setup:</span>
+                            <strong id="breakdownDecor">₹60,000</strong>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Event Addons Extra:</span>
+                            <strong id="breakdownAddons">₹0</strong>
+                        </div>
+                        <div class="breakdown-row total-row">
+                            <span>Calculated Sum:</span>
+                            <span id="breakdownTotal">₹1,72,500</span>
+                        </div>
+                    </div>
+
+                    <p
+                        style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 2rem; text-align: center; font-style: italic;">
+                        *Estimated price ranges contain safety buffers. Real prices vary based on actual requirements.
+                    </p>
+
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openModalWithDetails()">Request
+                        Detailed Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Why Choose Us</span>
+                <h2>Why Families Trust Our Work</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-heart"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card reveal-element delay-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>10+ Years Experience</h3>
+                        <p>Organized over 500 family events, delivering memorable experiences each time.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card reveal-element delay-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>Pure & Hygienic Ingredients</h3>
+                        <p>We source top-tier ingredients and maintain clean prep settings for your peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card reveal-element delay-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>Custom Mandap Setup</h3>
+                        <p>Design stages tailored specifically to you, matching your unique theme ideas.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card reveal-element delay-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-sliders"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>Flexible Packages</h3>
+                        <p>We adapt our catering and decor layouts to suit your specific budget requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card reveal-element delay-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>Professional Staff</h3>
+                        <p>Experienced chefs, visual decorators, and servers ensuring smooth operations.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card reveal-element delay-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>Punctual Management</h3>
+                        <p>Food served hot on schedule, with stage setups completed well before your guests arrive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Our Showcase</span>
+                <h2>Glimpse of Royal Creations</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-images"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery 1 (Mandap Decoration) -->
+                <div class="gallery-card reveal-element delay-1"
+                    onclick="openLightbox('Outdoor Stage Mandap Decor', 'Stunning outdoor wedding mandap draped with peach curtains, floral accents, and artificial grass flooring.', ['images/1.jpeg', 'images/mandap_2.jpg', 'images/mandap_3.jpg', 'images/mandap_4.jpg', 'images/mandap_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/1.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-archway"></i>
+                        <h3>Mandap Decoration</h3>
+                        <p>Outdoor Floral Stage & Peach Drapes</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 (Wedding Stage Setup) -->
+                <div class="gallery-card reveal-element delay-2"
+                    onclick="openLightbox('Grand Indoor Royal Stage', 'Luxury indoor mandap decoration with detailed ceiling draping, royal seating, floral pillars, and hanging garlands.', ['images/2.jpeg', 'images/stage_2.jpg', 'images/stage_3.jpg', 'images/stage_4.jpg', 'images/stage_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/2.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-gem"></i>
+                        <h3>Wedding Stage Setup</h3>
+                        <p>Indoor Dome Floral Canopy & Royal Sofa</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 (Function Decoration - Haldi & Mehendi) -->
+                <div class="gallery-card reveal-element delay-3"
+                    onclick="openLightbox('Haldi & Mehendi Function Decor', 'Vibrant, colorful floral arrangements, swings, and seating custom-designed for Haldi, Mehendi, and pre-wedding celebrations.', ['images/3.jpeg', 'images/func_2.jpg', 'images/func_3.jpg', 'images/func_4.jpg', 'images/func_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/3.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-spa"></i>
+                        <h3>Function Decoration</h3>
+                        <p>Haldi, Mehendi & Pre-Wedding Setup</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 4 (Buffet Arrangement) -->
+                <div class="gallery-card reveal-element delay-1"
+                    onclick="openLightbox('Imperial Buffet Presentation', 'A visually stunning royal buffet layout with elegant brass food containers, custom lighting, and beautiful floral backdrops.', ['images/buffet_arrangement.jpeg', 'images/buffet_2.jpg', 'images/buffet_3.jpg', 'images/buffet_4.jpg', 'images/buffet_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/buffet_arrangement.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Buffet Arrangement</h3>
+                        <p>Royal Display & Brass Warmers</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 5 (Catering Service) -->
+                <div class="gallery-card reveal-element delay-2"
+                    onclick="openLightbox('Exquisite Catering & Hospitality', 'Professional hospitality staff and servers in traditional attire providing premium table-side service for your guests.', ['images/catering_service.jpeg', 'images/catering_2.jpg', 'images/catering_3.jpg', 'images/catering_4.jpg', 'images/catering_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/catering_service.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h3>Catering Service</h3>
+                        <p>Royal Hospitality & Welcoming Staff</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 6 (Sweet & Live Food Stalls) -->
+                <div class="gallery-card reveal-element delay-3"
+                    onclick="openLightbox('Sweets & Interactive Live Food Stalls', 'Interactive live cooking stations for fresh hot delicacies paired with a luxurious dessert island showing traditional and modern sweets.', ['images/sweet_live_stalls.jpeg', 'images/sweets_2.jpg', 'images/sweets_3.jpg', 'images/sweets_4.jpg', 'images/sweets_5.jpg'])">
+                    <div class="gallery-card-bg" style="background-image: url('images/sweet_live_stalls.jpeg');"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-ice-cream"></i>
+                        <h3>Sweets & Live Food Stalls</h3>
+                        <p>Dessert Islands & Interactive Counters</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center reveal-element">
+                <button class="btn btn-primary" onclick="openModal('View Gallery Collection Request')">Request Gallery
+                    Catalog</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Testimonials</span>
+                <h2>What Our Families Say</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="carousel-container reveal-element delay-1">
+                <!-- Navigation buttons -->
+                <button class="carousel-control-btn prev" onclick="moveCarousel(-1)" aria-label="Previous Slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-btn next" onclick="moveCarousel(1)" aria-label="Next Slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide active">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "The food quality and stage decoration were absolutely remarkable. All our guests
+                            complimented the Puran Poli and custom floral arch setup. Highly recommended!"
+                        </blockquote>
+                        <div class="client-profile">
+                            <div class="client-avatar">P&R</div>
+                            <h4>Priya & Rahul Deshmukh</h4>
+                            <span>Wedding Event (500 Guests)</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Truly the best event partner in Chhatrapati Sambhajinagar! The staff managed everything
+                            very professionally, leaving us completely free to enjoy our daughter's wedding."
+                        </blockquote>
+                        <div class="client-profile">
+                            <div class="client-avatar">A&S</div>
+                            <h4>Amit & Sneha Kulkarni</h4>
+                            <span>Reception Ceremony (800 Guests)</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "The live counters and dessert displays looked stunning. Excellent hospitality, responsive
+                            coordinators, and great value for the pricing."
+                        </blockquote>
+                        <div class="client-profile">
+                            <div class="client-avatar">V&P</div>
+                            <h4>Vikram & Prachi Patil</h4>
+                            <span>Engagement Ceremony (300 Guests)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="carousel-dots">
+                    <span class="carousel-dot active" onclick="setCarouselSlide(0)"></span>
+                    <span class="carousel-dot" onclick="setCarouselSlide(1)"></span>
+                    <span class="carousel-dot" onclick="setCarouselSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="sub-title">Connect With Us</span>
+                <h2>Book Your Event Consultation</h2>
+                <div class="divider-mandala">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-envelope-open-text"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact info panel -->
+                <div class="contact-details reveal-element delay-1">
+                    <h3>Let's Create Magic Together</h3>
+                    <p>Contact our event consultants to receive custom menu layouts and stage decor theme proposals for
+                        your wedding.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Call Anytime</h4>
+                                <p><a href="tel:+919112799815">+91 9112799815</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Our Location</h4>
+                                <p>Chhatrapati Sambhajinagar, Maharashtra</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Email Enquiries</h4>
+                                <p><a href="mailto:pardeshiaarti49@gmail.com">pardeshiaarti49@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form card -->
+                <div class="contact-form-card reveal-element delay-2">
+                    <h3>Send Us An Inquiry</h3>
+
+                    <!-- Standard form -->
+                    <form id="contactForm" onsubmit="handleFormSubmit(event, 'contactForm', 'contactSuccess')">
+                        <div class="form-grid">
+                            <div class="form-group-input">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group-input">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number"
+                                        required>
+                                </div>
+                                <div class="form-group-input">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group-input">
+                                <textarea name="message" class="form-control"
+                                    placeholder="Tell us about your wedding event (Date, expected guests, location, requirements)..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-maroon" style="width: 100%;">Submit Inquire
+                                Details</button>
+                        </div>
+                    </form>
+
+                    <!-- Success State -->
+                    <div class="form-success-state" id="contactSuccess">
+                        <div class="success-checkmark-icon"><i class="fas fa-check"></i></div>
+                        <h4>Thank You!</h4>
+                        <p style="margin-top: 0.5rem;">Your inquiry details have been saved. Our wedding representative
+                            will call you back within 24 hours.</p>
+                        <button onclick="resetFormState('contactForm', 'contactSuccess')" class="btn btn-secondary"
+                            style="margin-top: 1.5rem; padding: 0.5rem 1.5rem;">Send another message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Panel 1 -->
+                <div class="footer-logo-panel">
+                    <img src="images/logo.png" alt="Shubham Caterers & Events Logo" class="footer-logo-img">
+                    <h4 class="footer-brand-name">Shubham Mangal Caterers</h4>
+                    <p>Delivering authentic traditional taste and elegant wedding stage layouts since 2016.</p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=919112799815" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="footer-links-panel">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu-explorer">Menu Details</a></li>
+                        <li><a href="#calculator">Budget Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="footer-links-panel">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">Traditional Catering</a></li>
+                        <li><a href="#services">Mandap Decoration</a></li>
+                        <li><a href="#services">Event Coordination</a></li>
+                        <li><a href="#gallery">Visual Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Panel 4 -->
+                <div class="footer-info-panel">
+                    <h4>Office Details</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919112799815">+91 9112799815</a></p>
+                    <p><i class="fas fa-location-dot"></i> A-39, Nath Nagar, Behind Sindhi Colony, Chhatrapati Sambhajinagar, Maharashtra</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:pardeshiaarti49@gmail.com">pardeshiaarti49@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shubham Mangal Caterers. All rights reserved. Designed with traditional aesthetics.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-action-buttons right">
+        <a href="https://api.whatsapp.com/send?phone=919112799815" target="_blank" class="fab-btn fab-whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919112799815" class="fab-btn fab-call" aria-label="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Booking Overlay Modal -->
+    <div class="modal-overlay" id="bookingModal" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal()"><i class="fas fa-xmark"></i></button>
+
+            <div id="modalFormContainer">
+                <h3>Book Wedding Consultation</h3>
+                <p>Submit your details to plan your wedding package with our head representative.</p>
+
+                <form id="modalForm" onsubmit="handleFormSubmit(event, 'modalForm', 'modalSuccess')">
+                    <input type="hidden" id="modalSubject" name="subject" value="General Booking Inquiry">
+
+                    <div class="form-grid">
+                        <div class="form-group-input">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group-input">
+                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group-input">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address">
+                        </div>
+
+                        <div class="form-grid" style="grid-template-columns: 1.2fr 0.8fr; gap: 1rem;">
+                            <div class="form-group-input">
+                                <label class="calc-label" style="font-size: 0.8rem; margin-bottom: 0.25rem;">Service/Event Type</label>
+                                <select name="menu_choice" class="calc-select" style="padding: 0.75rem 1rem;" onchange="handleChoiceChange(this)">
+                                    <option value="shaadi">Shaadi</option>
+                                    <option value="haldi-mehandi">Haldi-Mehendi Function</option>
+                                    <option value="pooja-feast">Traditional Pooja Feast</option>
+                                    <option value="only-catering">Only Catering</option>
+                                    <option value="only-decoration">Only Decoration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <input type="text" name="other_choice" id="otherChoiceInput" class="form-control" style="margin-top: 0.75rem; display: none; padding: 0.75rem 1rem;" placeholder="Please specify details..." required>
+                            </div>
+                            <div class="form-group-input">
+                                <label class="calc-label" style="font-size: 0.8rem; margin-bottom: 0.25rem;">Expected
+                                    Guests</label>
+                                <input type="number" id="modalGuests" name="guests" class="form-control"
+                                    placeholder="250" style="padding: 0.75rem 1rem;">
+                            </div>
+                        </div>
+
+                        <div class="form-group-input">
+                            <textarea name="requirements" id="modalRequirements" class="form-control"
+                                placeholder="Any details or decor preferences..." style="min-height: 80px;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-maroon" style="width: 100%;">Confirm Consultation
+                            Request</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success screen -->
+            <div class="form-success-state" id="modalSuccess">
+                <div class="success-checkmark-icon"><i class="fas fa-check"></i></div>
+                <h4>Request Submitted!</h4>
+                <p style="margin-top: 0.5rem;">We have saved your details. Our chief chef & decoration planner will
+                    contact you shortly.</p>
+                <button onclick="closeModal()" class="btn btn-primary"
+                    style="margin-top: 1.5rem; padding: 0.5rem 2rem;">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close Lightbox"><i
+                class="fas fa-xmark"></i></button>
+
+        <!-- Navigation Buttons -->
+        <button class="lightbox-nav-btn prev" onclick="event.stopPropagation(); changeLightboxImage(-1)"
+            aria-label="Previous Image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav-btn next" onclick="event.stopPropagation(); changeLightboxImage(1)"
+            aria-label="Next Image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="lightbox-content" id="lightboxImg">
+            <!-- Image tag is dynamically injected here -->
+        </div>
+
+        <div class="lightbox-footer">
+            <div class="lightbox-caption">
+                <h4 id="lightboxTitle">Image Title</h4>
+                <p id="lightboxText">Description text goes here</p>
+            </div>
+            <!-- Indicator Dots -->
+            <div class="lightbox-dots" id="lightboxDots"></div>
+        </div>
+    </div>
+
+    <!-- Canvas for Luxury Particle Effects (Flower Petals & Cursor Trails) -->
+    <canvas id="luxuryEffectsCanvas"></canvas>
+
+    <!-- External JavaScript script link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
